@@ -7,8 +7,6 @@
   <img src="https://img.shields.io/github/v/release/smmariquit/bus-ticketing-app" />
 </p>
 
----
-
 ## Tech Stack
 
 <p align="center">
@@ -26,16 +24,14 @@
 ## User Flow Diagram
 
 ```mermaid
-flowchart TD
+flowchart LR
     A[User opens app] --> B[Selects Trip Details]
     B --> C[Enters Bus, Driver, Conductor, Route]
-    C --> D[Selects Fare Details]
-    D --> E[Chooses Passenger Category, Origin, Destination]
-    E --> F[App calculates fare]
-    F --> G[Shows Trip Summary]
-    G --> H[User confirms and prints receipt]
-    H --> I[Receipt saved to database]
-    I --> J[Thank you message]
+    C --> D[Chooses Passenger Category, Origin, Destination]
+    D --> E[Shows Trip Summary]
+    E --> F[User confirms and prints receipt]
+    F --> G[Receipt saved to database]
+    G --> H[Thank you message]
 ```
 
 ---
@@ -147,3 +143,22 @@ To learn more about React Native, take a look at the following resources:
 - [https://pub.dev/packages/pos_printer_helper](https://pub.dev/packages/pos_printer_helper)
 - [https://lynqd.com/](https://lynqd.com/)
 - [https://developer.sunmi.com/docs/en-US/xeghjk491/maceghjk502](https://developer.sunmi.com/docs/en-US/xeghjk491/maceghjk502)
+
+## CI/CD Pipeline (GitHub Actions)
+
+Every time you push or open a pull request to the `main` branch, GitHub Actions automatically runs the following workflow:
+
+1. **Checkout code** – Retrieves the latest code from the repository.
+2. **Set up Node.js and JDK** – Prepares the environment for React Native and Android builds.
+3. **Install dependencies** – Installs all required npm packages.
+4. **Run tests** – Executes all unit and UI tests to ensure code quality.
+5. **Build APK** – Compiles the Android app into a release APK using Gradle.
+6. **Upload APK artifact** – Makes the built APK available for download as a workflow artifact.
+
+This automated process ensures every build is tested, production-ready, and easy to share with stakeholders.
+
+---
+
+## License
+
+This project is licensed under the MIT License.
