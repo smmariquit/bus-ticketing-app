@@ -21,21 +21,6 @@
   <img src="https://img.shields.io/badge/Google%20Apps%20Script-cloud-yellow?logo=google" />
 </p>
 
-## User Flow Diagram
-
-```mermaid
-flowchart LR
-    A[User opens app] --> B[Selects Trip Details]
-    B --> C[Enters Bus, Driver, Conductor, Route]
-    C --> D[Chooses Passenger Category, Origin, Destination]
-    D --> E[Shows Trip Summary]
-    E --> F[User confirms and prints receipt]
-    F --> G[Receipt saved to database]
-    G --> H[Thank you message]
-```
-
----
-
 This is a [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 This app has been tested on the following devices:
@@ -86,16 +71,19 @@ npm run android
 yarn android
 ```
 
-# User Flow
+## User Flow Diagram
 
-1. **User opens the app** and is presented with the bus ticketing form.
-2. **User fills out the form** and submits their ticket details.
-3. On submission:
-  - The app detects the device model (e.g., Sunmi V2s, generic Android, etc.).
-  - If the device is supported (e.g., Sunmi V2s), the ticket is printed using the Sunmi printer library.
-  - If the device is not supported, a generic print fallback is used (e.g., console log or alternate method).
-  - The ticket data is also sent to a Google Apps Script endpoint for record-keeping.
-4. **User receives a printed ticket and the data is saved remotely.**
+```mermaid
+flowchart LR
+    A[User opens app] --> B[Selects Trip Details]
+    B --> C[Enters Bus, Driver, Conductor, Route]
+    C --> D[Chooses Passenger Category, Origin, Destination]
+    D --> E[Shows Trip Summary]
+    E --> F[User confirms and prints receipt]
+    F --> G[Receipt saved to database]
+    G --> H[Thank you message]
+```
+---
 
 # Sample Receipt Output
 
