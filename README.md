@@ -70,6 +70,35 @@ yarn android
   - The ticket data is also sent to a Google Apps Script endpoint for record-keeping.
 4. **User receives a printed ticket and the data is saved remotely.**
 
+# Sample Receipt Output
+
+Below is an example of what a printed receipt looks like (ASCII art):
+
+```
+====================================
+| COMPANY NAME                     |
+| 123 Main St, City, Country       |
+| TIN: 123-456-789-000             |
+|                                  |
+| Receipt #: 000123                |
+| Date: 2025-08-14                 |
+| Time: 11:59:59 PM                |
+| Bus Number: 2001                 |
+| Driver: Juan Dela Cruz           |
+| Conductor: Pedro Santos          |
+| Route: Naga-Labo                 |
+| From: Naga                       |
+| To: Labo                         |
+| Passenger: Senior Citizen        |
+| Fare Amount: ₱240.00             |
+====================================
+|      Thank you for riding!        |
+|    Have a safe and pleasant trip! |
+====================================
+```
+
+You can customize the receipt layout in `src/constants/receiptLayout.ts` and related files.
+
 # Learn More
 
 To learn more about React Native, take a look at the following resources:

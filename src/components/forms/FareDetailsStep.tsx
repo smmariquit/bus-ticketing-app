@@ -4,6 +4,7 @@ import { DISCOUNT_PERCENTAGE } from '../../constants/discountConstants';
 import { calculateFareWithDiscount } from '../../constants/fareMatrix';
 import { PASSENGER_CATEGORIES } from '../../constants/passengerCategories';
 import { ROUTE_STOPS } from '../../constants/routeStops';
+import * as Style from '../../constants/styleConstants';
 import type { FormData } from './BusTicketingForm';
 import { FormPicker } from './FormPicker';
 
@@ -123,78 +124,78 @@ export const FareDetailsStep: React.FC<FareDetailsStepProps> = ({
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
-    borderRadius: 10,
-    padding: 20,
-    marginBottom: 20,
-    shadowColor: '#000',
+    borderRadius: Style.BORDER_RADIUS_MEDIUM,
+    padding: Style.BUTTON_PADDING_HORIZONTAL,
+    marginBottom: Style.BUTTON_PADDING_HORIZONTAL,
+    shadowColor: Style.COLOR_SHADOW,
     shadowOffset: {
       width: 0,
       height: 2,
     },
-    shadowOpacity: 0.1,
-    shadowRadius: 3.84,
+    shadowOpacity: Style.SHADOW_OPACITY,
+    shadowRadius: Style.SHADOW_RADIUS,
     elevation: 5,
   },
   title: {
-    fontSize: 24,
+    fontSize: Style.FONT_SIZE_LARGE,
     fontWeight: 'bold',
-    color: '#333',
-    marginBottom: 20,
+    color: Style.COLOR_TEXT,
+    marginBottom: Style.BUTTON_PADDING_HORIZONTAL,
     textAlign: 'center',
   },
   fareContainer: {
-    backgroundColor: '#f0f8ff',
-    padding: 15,
-    borderRadius: 8,
-    marginVertical: 15,
+    backgroundColor: Style.COLOR_BG_FAIR,
+    padding: Style.BUTTON_PADDING_VERTICAL,
+    borderRadius: Style.BORDER_RADIUS_SMALL,
+    marginVertical: Style.BUTTON_PADDING_VERTICAL,
     alignItems: 'center',
     borderWidth: 1,
-    borderColor: '#2b8aed',
+    borderColor: Style.COLOR_PRIMARY,
   },
   fareLabel: {
-    fontSize: 16,
-    color: '#333',
+    fontSize: Style.FONT_SIZE_MEDIUM,
+    color: Style.COLOR_TEXT,
     marginBottom: 5,
   },
   fareAmount: {
     fontSize: 28,
     fontWeight: 'bold',
-    color: '#2b8aed',
+    color: Style.COLOR_PRIMARY,
   },
   buttonContainer: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginTop: 20,
-    gap: 15,
+    marginTop: Style.BUTTON_PADDING_HORIZONTAL,
+    gap: Style.BUTTON_GAP,
   },
   backButton: {
-    backgroundColor: '#6c757d',
-    paddingVertical: 15,
-    paddingHorizontal: 30,
-    borderRadius: 8,
+    backgroundColor: Style.COLOR_SECONDARY,
+    paddingVertical: Style.BUTTON_PADDING_VERTICAL,
+    paddingHorizontal: Style.BUTTON_PADDING_HORIZONTAL,
+    borderRadius: Style.BORDER_RADIUS_SMALL,
     flex: 1,
     alignItems: 'center',
   },
   backButtonText: {
     color: 'white',
-    fontSize: 16,
+    fontSize: Style.FONT_SIZE_MEDIUM,
     fontWeight: 'bold',
   },
   nextButton: {
-    backgroundColor: '#2b8aed',
-    paddingVertical: 15,
-    paddingHorizontal: 30,
-    borderRadius: 8,
+    backgroundColor: Style.COLOR_PRIMARY,
+    paddingVertical: Style.BUTTON_PADDING_VERTICAL,
+    paddingHorizontal: Style.BUTTON_PADDING_HORIZONTAL,
+    borderRadius: Style.BORDER_RADIUS_SMALL,
     flex: 1,
     alignItems: 'center',
   },
   disabledButton: {
-    backgroundColor: '#a0c4f7',
+    backgroundColor: Style.COLOR_DISABLED,
     opacity: 0.6,
   },
   buttonText: {
     color: 'white',
-    fontSize: 16,
+    fontSize: Style.FONT_SIZE_MEDIUM,
     fontWeight: 'bold',
   },
   disabledButtonText: {

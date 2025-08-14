@@ -1,12 +1,8 @@
-// ...existing code...
-
 import React, { useEffect, useState } from 'react';
 import { View } from 'react-native';
 import TripSummary from '../summary/TripSummary';
 import { FareDetailsStep } from './FareDetailsStep';
 import { TripDetailsStep } from './TripDetailsStep';
-// ...existing code...
-// If you previously imported busTripConstants, update to import from the new files as needed.
 
 export interface FormData {
     ticketNumber?: string | null;
@@ -84,8 +80,6 @@ const BusTicketingForm: React.FC<BusTicketingFormProps> = ({ onSubmit, ticketNum
         if (step === 2) setStep(1);
         else if (step === 3) setStep(2);
     };
-
-    // handleSubmit is not used in the new flow
 
     return (
         <View>

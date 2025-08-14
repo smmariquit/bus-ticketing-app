@@ -3,7 +3,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { BUS_NUMBERS } from '../../constants/busNumbers';
 import { CONDUCTORS } from '../../constants/conductors';
 import { DRIVERS } from '../../constants/drivers';
-import { ROUTES } from '../../constants/routes';
+import { ROUTES } from '../../constants/routeStops';
 import type { FormData } from './BusTicketingForm';
 import { FormPicker } from './FormPicker';
 

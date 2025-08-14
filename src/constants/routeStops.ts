@@ -8,3 +8,5 @@ export const ROUTE_STOPS = {
 		'Calagbangan', 'Cbsua', 'Sipocot', 'Libmanan', 'Pamplona', 'Naga'
 	]
 };
+
+export const ROUTES = Object.keys(ROUTE_STOPS);

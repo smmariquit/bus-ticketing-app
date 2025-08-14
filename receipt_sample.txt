@@ -1,0 +1,20 @@
+====================================
+|         COMPANY NAME             |
+| 123 Main St, City, Country       |
+| TIN: 123-456-789-000             |
+====================================
+| Receipt #: 000123                |
+| Date: 2025-08-14                 |
+| Time: 14:32                      |
+|----------------------------------|
+| Bus Number: 12                   |
+| Driver: Juan Dela Cruz           |
+| Conductor: Pedro Santos          |
+| Route: Naga-Labo                 |
+| From: Naga                       |
+| To: Labo                         |
+| Passenger: Senior Citizen        |
+| Fare Amount: ₱240.00             |
+====================================
+|      Thank you for riding!       |
+====================================

@@ -1,4 +1,10 @@
 // Receipt layout constants for bus ticketing system
+export const RECEIPT_HEADER = {
+  company: 'COMPANY NAME',
+  address: '123 Main St, City, Country',
+  tin: '123-456-789-000'
+};
+
 export const RECEIPT_LAYOUT = [
   { key: 'receiptNumber', label: 'Receipt #' },
   { key: 'date', label: 'Date' },

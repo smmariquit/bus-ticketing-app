@@ -8,6 +8,7 @@ import {
     TouchableOpacity,
     View,
 } from 'react-native';
+import * as Style from '../../constants/styleConstants';
 
 interface Option {
   label: string;
@@ -103,12 +104,12 @@ const { height } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
-    marginBottom: 16,
+    marginBottom: Style.PADDING,
   },
   label: {
-    fontSize: 16,
+    fontSize: Style.FONT_SIZE_MEDIUM,
     fontWeight: 'bold',
-    color: '#333',
+    color: Style.COLOR_TEXT,
     marginBottom: 8,
   },
   picker: {
@@ -117,87 +118,87 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     backgroundColor: '#f9f9f9',
     borderWidth: 1,
-    borderColor: '#ddd',
-    borderRadius: 8,
+    borderColor: Style.COLOR_BORDER,
+    borderRadius: Style.BORDER_RADIUS_SMALL,
     paddingHorizontal: 12,
-    paddingVertical: 15,
+    paddingVertical: Style.BUTTON_PADDING_VERTICAL,
     minHeight: 50,
   },
   pickerText: {
-    fontSize: 16,
-    color: '#333',
+    fontSize: Style.FONT_SIZE_MEDIUM,
+    color: Style.COLOR_TEXT,
     flex: 1,
   },
   placeholder: {
-    color: '#999',
+    color: Style.COLOR_TEXT_PLACEHOLDER,
   },
   arrow: {
-    fontSize: 12,
-    color: '#666',
+    fontSize: Style.OPTION_ARROW_SIZE,
+    color: Style.COLOR_TEXT_LIGHT,
   },
   modalOverlay: {
     flex: 1,
-    backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    backgroundColor: Style.COLOR_BG_MODAL,
     justifyContent: 'flex-end',
   },
   modalContent: {
     backgroundColor: 'white',
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
-    maxHeight: height * 0.7,
+    borderTopLeftRadius: Style.BORDER_RADIUS_LARGE,
+    borderTopRightRadius: Style.BORDER_RADIUS_LARGE,
+    maxHeight: height * Style.MODAL_MAX_HEIGHT_RATIO,
   },
   modalHeader: {
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
-    padding: 20,
+    padding: Style.BUTTON_PADDING_HORIZONTAL,
     borderBottomWidth: 1,
-    borderBottomColor: '#eee',
+    borderBottomColor: Style.COLOR_BORDER_MODAL,
   },
   modalTitle: {
-    fontSize: 18,
+    fontSize: Style.OPTION_FONT_SIZE,
     fontWeight: 'bold',
-    color: '#333',
+    color: Style.COLOR_TEXT,
   },
   closeButton: {
-    width: 30,
-    height: 30,
-    borderRadius: 15,
+    width: Style.CLOSE_BUTTON_SIZE,
+    height: Style.CLOSE_BUTTON_SIZE,
+    borderRadius: Style.CLOSE_BUTTON_RADIUS,
     backgroundColor: '#f0f0f0',
     justifyContent: 'center',
     alignItems: 'center',
   },
   closeButtonText: {
-    fontSize: 16,
-    color: '#666',
+    fontSize: Style.FONT_SIZE_MEDIUM,
+    color: Style.COLOR_TEXT_LIGHT,
   },
   optionsList: {
-    maxHeight: height * 0.5,
+    maxHeight: height * Style.OPTIONS_MAX_HEIGHT_RATIO,
   },
   optionItem: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingHorizontal: 20,
-    paddingVertical: 15,
+    paddingHorizontal: Style.BUTTON_PADDING_HORIZONTAL,
+    paddingVertical: Style.BUTTON_PADDING_VERTICAL,
     borderBottomWidth: 1,
     borderBottomColor: '#f0f0f0',
   },
   selectedOption: {
-    backgroundColor: '#e3f2fd',
+    backgroundColor: Style.COLOR_BG_SELECTED,
   },
   optionText: {
-    fontSize: 16,
-    color: '#333',
+    fontSize: Style.FONT_SIZE_MEDIUM,
+    color: Style.COLOR_TEXT,
     flex: 1,
   },
   selectedOptionText: {
-    color: '#2b8aed',
-    fontWeight: '600',
+    color: Style.COLOR_PRIMARY,
+    fontWeight: Style.OPTION_SELECTED_WEIGHT,
   },
   checkmark: {
-    fontSize: 18,
-    color: '#2b8aed',
+    fontSize: Style.OPTION_CHECKMARK_SIZE,
+    color: Style.COLOR_PRIMARY,
     fontWeight: 'bold',
   },
 });
