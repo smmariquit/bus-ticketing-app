@@ -1,13 +1,12 @@
-
-import { GOOGLE_APPS_SCRIPT_URL } from '../constants/googleAppsScriptConstants';
+import { GOOGLE_APPS_SCRIPT_URL_GET } from '../constants/googleAppsScriptConstants';
 
 export async function getNextTicketNumber(): Promise<number> {
   try {
     let rowCount = 0;
-    if(!GOOGLE_APPS_SCRIPT_URL){
+    if(!GOOGLE_APPS_SCRIPT_URL_GET){
         return Promise.resolve(rowCount);
     }
-    const response = await fetch(`${GOOGLE_APPS_SCRIPT_URL}?action=getRowCount`);
+    const response = await fetch(`${GOOGLE_APPS_SCRIPT_URL_GET}?action=getRowCount`);
     const text = await response.text();
     try {
       const data = JSON.parse(text);
