@@ -75,13 +75,13 @@ yarn android
 
 ```mermaid
 flowchart LR
-    A[User opens app] --> B[Selects Trip Details]
-    B --> C[Enters Bus, Driver, Conductor, Route]
-    C --> D[Chooses Passenger Category, Origin, Destination]
-    D --> E[Shows Trip Summary]
-    E --> F[User confirms and prints receipt]
+    A[User opens app] --> B[Select trip details]
+    B --> C[Enter bus, driver, conductor, route]
+    C --> D[Enter passenger category, origin, destination]
+    D --> E[Show trip summary]
+    E --> F[Confirm and prints receipt]
     F --> G[Receipt saved to database]
-    G --> H[Thank you message]
+    F --> H[Thank you message]
     H --> A
 ```
 ---
