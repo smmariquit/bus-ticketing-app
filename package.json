@@ -17,6 +17,7 @@
     "chroma-js": "^3.1.2",
     "react": "19.1.0",
     "react-native": "0.81.0",
+    "react-native-device-info": "^14.0.4",
     "react-native-safe-area-context": "^5.5.2"
   },
   "devDependencies": {

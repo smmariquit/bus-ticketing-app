@@ -1,46 +1,60 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
+ * This React Native app provides a bus ticketing system for a POS machine.
  */
 
-
-import { View, Text } from 'react-native';
-import BusTicketingForm from './components/BusTicketingForm';
-import * as SunmiPrinterLibrary from '@mitsuharu/react-native-sunmi-printer-library';
-import { RECEIPT_LAYOUT } from './constants/receiptLayout';
-
+import React, { useEffect, useState } from 'react';
+import { View } from 'react-native';
+import DeviceInfo from 'react-native-device-info';
+import BusTicketingForm from './components/forms/BusTicketingForm';
+import TripSummary from './components/summary/TripSummary';
+import { printReceipt } from './services/printService';
+import { getNextTicketNumber } from './services/ticketService';
 
 function App() {
-
   return (
     <AppContent />
   );
 }
 
-async function printReceipt(formData) {
-  try {
-    SunmiPrinterLibrary.prepare();
-    // Print receipt based on #receiptLayout.ts
-    for (const item of RECEIPT_LAYOUT) {
-      const value = formData[item.key];
-      const formattedValue = item.format ? item.format(value) : value;
-      SunmiPrinterLibrary.printText(`${item.label}: ${formattedValue}\n`);
-    }
-  } catch (error) {
-    console.error('Error printing receipt:', error);
-  }
-}
 
 function AppContent() {
-  return (
-    <View>
-      <BusTicketingForm onSubmit={formData => {
-        console.log('Form submitted:', formData);
-        printReceipt(formData);
+  const [submittedFormData, setSubmittedFormData] = useState(null);
+  // Removed showConfirm state
+  const [ticketNumber, setTicketNumber] = useState<number | null>(null);
 
-      }} />
+  useEffect(() => {
+    async function fetchTicketNumber() {
+      const num = await getNextTicketNumber();
+      setTicketNumber(num);
+    }
+    fetchTicketNumber();
+  }, []);
+
+  const handleFormSubmit = (formData: any) => {
+    setSubmittedFormData(formData);
+  };
+
+  // Removed handleConfirm
+  console.log('Device model:', DeviceInfo.getModel());
+
+  return (
+    <View style={{ flex: 1, padding: 16, backgroundColor: '#fff' }}>
+      {!submittedFormData && (
+        <BusTicketingForm onSubmit={handleFormSubmit} ticketNumber={ticketNumber || undefined} />
+      )}
+      {submittedFormData && (
+        <TripSummary
+          formData={submittedFormData}
+          onBack={() => {
+            setSubmittedFormData(null);
+          }}
+          onConfirm={() => {
+            printReceipt(submittedFormData);
+            setSubmittedFormData(null);
+            getNextTicketNumber().then(setTicketNumber);
+          }}
+        />
+      )}
     </View>
   );
 }
