@@ -82,6 +82,7 @@ flowchart LR
     E --> F[User confirms and prints receipt]
     F --> G[Receipt saved to database]
     G --> H[Thank you message]
+    H --> A
 ```
 ---
 
