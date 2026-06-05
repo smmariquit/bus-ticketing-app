@@ -151,3 +151,12 @@ This automated process ensures every build is tested, production-ready, and easy
 ## License
 
 This project is licensed under the MIT License.
+
+## 📊 Current State of the Code
+- **Tech Stack:** React, Ruby, Node.js/NPM
+- **Repository Size:** 94 tracked files
+- **Latest Update:** `af41610 chore: add stale issue and PR validators`
+
+
+---
+*☕ If you found this project useful, you can support my work at [kape.stimmie.dev](https://kape.stimmie.dev)!*
