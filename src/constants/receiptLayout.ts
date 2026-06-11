@@ -1,3 +1,5 @@
+// src/constants/receiptLayout.ts
+
 // Receipt layout constants for bus ticketing system
 export const RECEIPT_HEADER = {
   company: 'COMPANY NAME',

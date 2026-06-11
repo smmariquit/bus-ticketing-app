@@ -1,3 +1,5 @@
+// src/constants/styleConstants.ts
+
 // Centralized style and layout constants for the app
 export const PADDING = 16;
 export const BG_COLOR = '#fff';

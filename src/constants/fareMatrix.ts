@@ -1,3 +1,5 @@
+// src/constants/fareMatrix.ts
+
 export const FARE_MATRIX = {
 	"Naga-Labo": {
 		"Naga": {

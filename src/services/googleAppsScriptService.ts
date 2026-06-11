@@ -1,3 +1,5 @@
+// src/services/googleAppsScriptService.ts
+
 import { GOOGLE_APPS_SCRIPT_URL } from '../constants/googleAppsScriptConstants';
 
 /**

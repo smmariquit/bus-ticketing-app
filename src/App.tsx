@@ -1,3 +1,5 @@
+// src/App.tsx
+
 /**
  * This React Native app provides a bus ticketing system for a POS machine.
  *

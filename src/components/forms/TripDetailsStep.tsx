@@ -1,3 +1,5 @@
+// src/components/forms/TripDetailsStep.tsx
+
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { BUS_NUMBERS } from '../../constants/busNumbers';

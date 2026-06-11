@@ -1,3 +1,5 @@
+// src/components/forms/BusTicketingForm.tsx
+
 import React, { useEffect, useState } from 'react';
 import { View } from 'react-native';
 import TripSummary from '../summary/TripSummary';

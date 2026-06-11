@@ -1,3 +1,5 @@
+// src/components/forms/FareDetailsStep.tsx
+
 import React, { useEffect } from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import { DISCOUNT_PERCENTAGE } from '../../constants/discountConstants';

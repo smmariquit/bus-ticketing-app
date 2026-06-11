@@ -1,3 +1,5 @@
+// src/components/summary/TripSummary.tsx
+
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
 import type { FormData } from '../forms/BusTicketingForm';

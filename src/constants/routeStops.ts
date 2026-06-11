@@ -1,3 +1,5 @@
+// src/constants/routeStops.ts
+
 export const ROUTE_STOPS = {
 	'Naga-Labo': [
 		'Naga', 'Pamplona', 'Libmanan', 'Sipocot', 'Cbsua', 'Calagbangan',

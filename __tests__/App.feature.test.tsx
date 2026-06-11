@@ -1,3 +1,5 @@
+// __tests__/App.feature.test.tsx
+
 import { fireEvent, render } from '@testing-library/react-native';
 import React from 'react';
 import App from '../src/App';

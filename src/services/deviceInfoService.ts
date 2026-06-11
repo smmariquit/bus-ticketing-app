@@ -1,3 +1,5 @@
+// src/services/deviceInfoService.ts
+
 import DeviceInfo from 'react-native-device-info';
 
 export async function getDeviceModel(): Promise<string | null> {

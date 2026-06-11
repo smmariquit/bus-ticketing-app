@@ -1,3 +1,5 @@
+// src/constants/busTripConstants.ts
+
 // All constants have been moved to their respective files:
 // - googleAppsScriptConstants.ts
 // - busNumbers.ts

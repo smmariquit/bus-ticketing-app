@@ -1,3 +1,5 @@
+// src/services/printService.ts
+
 import * as SunmiPrinterLibrary from '@mitsuharu/react-native-sunmi-printer-library';
 import { RECEIPT_FONT_SIZE, RECEIPT_LINE_SPACING } from '../constants/receiptConstants';
 import { RECEIPT_LAYOUT } from '../constants/receiptLayout';

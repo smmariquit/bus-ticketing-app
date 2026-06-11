@@ -1,3 +1,5 @@
+// jest.setup.js
+
 // import jest
 jest.mock('react-native-device-info', () => ({
   getModel: () => 'TestDevice',
