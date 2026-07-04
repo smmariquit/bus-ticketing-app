@@ -75,14 +75,14 @@ yarn android
 
 ```mermaid
 flowchart LR
-    A[User opens app] --> B[Select trip details]
-    B --> C[Enter bus, driver, conductor, route]
-    C --> D[Enter passenger category, origin, destination]
-    D --> E[Show trip summary]
-    E --> F[Confirm and prints receipt]
-    F --> G[Receipt saved to database]
-    F --> H[Thank you message]
-    H --> A
+ A[User opens app] --> B[Select trip details]
+ B --> C[Enter bus, driver, conductor, route]
+ C --> D[Enter passenger category, origin, destination]
+ D --> E[Show trip summary]
+ E --> F[Confirm and prints receipt]
+ F --> G[Receipt saved to database]
+ F --> H[Thank you message]
+ H --> A
 ```
 ---
 
@@ -92,24 +92,24 @@ Below is an example of what a printed receipt looks like (ASCII art):
 
 ```
 ====================================
-| COMPANY NAME                     |
-| 123 Main St, City, Country       |
-| TIN: 123-456-789-000             |
-|                                  |
-| Receipt #: 000123                |
-| Date: 2025-08-14                 |
-| Time: 11:59:59 PM                |
-| Bus Number: 2001                 |
-| Driver: Juan Dela Cruz           |
-| Conductor: Pedro Santos          |
-| Route: Naga-Labo                 |
-| From: Naga                       |
-| To: Labo                         |
-| Passenger: Senior Citizen        |
-| Fare Amount: ₱240.00             |
+| COMPANY NAME |
+| 123 Main St, City, Country |
+| TIN: 123-456-789-000 |
+| |
+| Receipt #: 000123 |
+| Date: 2025-08-14 |
+| Time: 11:59:59 PM |
+| Bus Number: 2001 |
+| Driver: Juan Dela Cruz |
+| Conductor: Pedro Santos |
+| Route: Naga-Labo |
+| From: Naga |
+| To: Labo |
+| Passenger: Senior Citizen |
+| Fare Amount: ₱240.00 |
 ====================================
-|      Thank you for riding!        |
-|    Have a safe and pleasant trip! |
+| Thank you for riding! |
+| Have a safe and pleasant trip! |
 ====================================
 ```
 
