@@ -1,34 +1,34 @@
 # Bus Ticketing App
 
 <p align="center">
-  <img src="https://github.com/smmariquit/bus-ticketing-app/actions/workflows/build-android-apk.yml/badge.svg" />
-  <img src="https://img.shields.io/github/workflow/status/smmariquit/bus-ticketing-app/Build%20Android%20APK?label=tests" />
-  <img src="https://img.shields.io/github/license/smmariquit/bus-ticketing-app" />
-  <img src="https://img.shields.io/github/v/release/smmariquit/bus-ticketing-app" />
+ <img src="https://github.com/smmariquit/bus-ticketing-app/actions/workflows/build-android-apk.yml/badge.svg" />
+ <img src="https://img.shields.io/github/workflow/status/smmariquit/bus-ticketing-app/Build%20Android%20APK?label=tests" />
+ <img src="https://img.shields.io/github/license/smmariquit/bus-ticketing-app" />
+ <img src="https://img.shields.io/github/v/release/smmariquit/bus-ticketing-app" />
 </p>
 
 ## Tech Stack
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React%20Native-2025-blue?logo=react" />
-  <img src="https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript" />
-  <img src="https://img.shields.io/badge/Jest-29.0-red?logo=jest" />
-  <img src="https://img.shields.io/badge/Testing%20Library-React%20Native-green?logo=testing-library" />
-  <img src="https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-blue?logo=githubactions" />
-  <img src="https://img.shields.io/badge/Sunmi%20Printer%20SDK-native-orange" />
-  <img src="https://img.shields.io/badge/Metro-bundler-blue" />
-  <img src="https://img.shields.io/badge/Gradle-APK%20build-green?logo=gradle" />
-  <img src="https://img.shields.io/badge/Google%20Apps%20Script-cloud-yellow?logo=google" />
+ <img src="https://img.shields.io/badge/React%20Native-2025-blue?logo=react" />
+ <img src="https://img.shields.io/badge/TypeScript-5.0-blue?logo=typescript" />
+ <img src="https://img.shields.io/badge/Jest-29.0-red?logo=jest" />
+ <img src="https://img.shields.io/badge/Testing%20Library-React%20Native-green?logo=testing-library" />
+ <img src="https://img.shields.io/badge/GitHub%20Actions-CI%2FCD-blue?logo=githubactions" />
+ <img src="https://img.shields.io/badge/Sunmi%20Printer%20SDK-native-orange" />
+ <img src="https://img.shields.io/badge/Metro-bundler-blue" />
+ <img src="https://img.shields.io/badge/Gradle-APK%20build-green?logo=gradle" />
+ <img src="https://img.shields.io/badge/Google%20Apps%20Script-cloud-yellow?logo=google" />
 </p>
 
 This is a [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 This app has been tested on the following devices:
 - [Sunmi V2s_STGL](https://www.sunmi.com/en/v2s/) (Build #3.1.9)
-  - Connected to [mitsuharu's React Native Library](https://www.npmjs.com/package/@mitsuharu/react-native-sunmi-printer-library)
-  - Other possible libraries include: [januslo's](https://www.npmjs.com/package/react-native-sunmi-v2-printer), [hjfruit's](https://www.npmjs.com/package/react-native-printer-sunmi)  
+ - Connected to [mitsuharu's React Native Library](https://www.npmjs.com/package/@mitsuharu/react-native-sunmi-printer-library)
+ - Other possible libraries include: [januslo's](https://www.npmjs.com/package/react-native-sunmi-v2-printer), [hjfruit's](https://www.npmjs.com/package/react-native-printer-sunmi) 
 - SOON [Noryox NB55S](https://www.noryox.com/product/handheld-pos-terminal-2/) (Build #1.0.9_B231214.144538)
-  - As of now, it seems like the API for this is proprietary
+ - As of now, it seems like the API for this is proprietary
 
 Features that possibly can be implemented further:
 - NFC Integration
@@ -137,12 +137,12 @@ To learn more about React Native, take a look at the following resources:
 
 Every time you push or open a pull request to the `main` branch, GitHub Actions automatically runs the following workflow:
 
-1. **Checkout code** – Retrieves the latest code from the repository.
-2. **Set up Node.js and JDK** – Prepares the environment for React Native and Android builds.
-3. **Install dependencies** – Installs all required npm packages.
-4. **Run tests** – Executes all unit and UI tests to ensure code quality.
-5. **Build APK** – Compiles the Android app into a release APK using Gradle.
-6. **Upload APK artifact** – Makes the built APK available for download as a workflow artifact.
+1. **Checkout code**: Retrieves the latest code from the repository.
+2. **Set up Node.js and JDK**: Prepares the environment for React Native and Android builds.
+3. **Install dependencies**: Installs all required npm packages.
+4. **Run tests**: Executes all unit and UI tests to ensure code quality.
+5. **Build APK**: Compiles the Android app into a release APK using Gradle.
+6. **Upload APK artifact**: Makes the built APK available for download as a workflow artifact.
 
 This automated process ensures every build is tested, production-ready, and easy to share with stakeholders.
 
@@ -156,7 +156,6 @@ This project is licensed under the MIT License.
 - **Tech Stack:** React, Ruby, Node.js/NPM
 - **Repository Size:** 94 tracked files
 - **Latest Update:** `af41610 chore: add stale issue and PR validators`
-
 
 ---
 *☕ If you found this project useful, you can support my work at [kape.stimmie.dev](https://kape.stimmie.dev)!*
