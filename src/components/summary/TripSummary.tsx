@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native';
+import * as Style from '../../constants/styleConstants';
 import type { FormData } from '../forms/BusTicketingForm';
 
 interface TripSummaryProps {
@@ -44,42 +45,42 @@ const styles = StyleSheet.create({
   buttonRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginTop: 20,
-    gap: 15,
+    marginTop: Style.BUTTON_PADDING_HORIZONTAL,
+    gap: Style.BUTTON_GAP,
   },
   backButton: {
-    backgroundColor: '#6c757d',
-    paddingVertical: 15,
-    paddingHorizontal: 30,
-    borderRadius: 8,
+    backgroundColor: Style.COLOR_SECONDARY,
+    paddingVertical: Style.BUTTON_PADDING_VERTICAL,
+    paddingHorizontal: Style.BUTTON_PADDING_HORIZONTAL,
+    borderRadius: Style.BORDER_RADIUS_SMALL,
     flex: 1,
     alignItems: 'center',
   },
   confirmButton: {
-    backgroundColor: '#2b8aed',
-    paddingVertical: 15,
-    paddingHorizontal: 30,
-    borderRadius: 8,
+    backgroundColor: Style.COLOR_PRIMARY,
+    paddingVertical: Style.BUTTON_PADDING_VERTICAL,
+    paddingHorizontal: Style.BUTTON_PADDING_HORIZONTAL,
+    borderRadius: Style.BORDER_RADIUS_SMALL,
     flex: 1,
     alignItems: 'center',
   },
   buttonText: {
     color: 'white',
-    fontSize: 16,
+    fontSize: Style.FONT_SIZE_MEDIUM,
     fontWeight: 'bold',
   },
   container: {
-    backgroundColor: 'rgba(43, 138, 237, 0.1)',
-    padding: 15,
-    borderRadius: 8,
-    marginBottom: 20,
+    backgroundColor: Style.COLOR_BG_SUMMARY,
+    padding: Style.PADDING,
+    borderRadius: Style.BORDER_RADIUS_SMALL,
+    marginBottom: Style.BUTTON_PADDING_HORIZONTAL,
     borderWidth: 1,
-    borderColor: 'rgba(43, 138, 237, 0.3)',
+    borderColor: Style.COLOR_BORDER_SUMMARY,
   },
   title: {
-    fontSize: 16,
+    fontSize: Style.FONT_SIZE_MEDIUM,
     fontWeight: 'bold',
-    color: '#2b8aed',
+    color: Style.COLOR_PRIMARY,
     marginBottom: 10,
     textAlign: 'center',
   },
@@ -90,11 +91,11 @@ const styles = StyleSheet.create({
   },
   label: {
     fontSize: 14,
-    color: '#333',
+    color: Style.COLOR_TEXT,
     fontWeight: '600',
   },
   value: {
     fontSize: 14,
-    color: '#555',
+    color: Style.COLOR_TEXT_MUTED,
   },
 });

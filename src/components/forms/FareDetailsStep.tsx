@@ -193,7 +193,6 @@ const styles = StyleSheet.create({
   },
   disabledButton: {
     backgroundColor: Style.COLOR_DISABLED,
-    opacity: 0.6,
   },
   buttonText: {
     color: 'white',
@@ -201,6 +200,6 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
   },
   disabledButtonText: {
-    color: '#ccc',
+    color: Style.COLOR_DISABLED_TEXT,
   },
 });

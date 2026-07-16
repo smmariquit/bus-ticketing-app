@@ -6,6 +6,7 @@ import { BUS_NUMBERS } from '../../constants/busNumbers';
 import { CONDUCTORS } from '../../constants/conductors';
 import { DRIVERS } from '../../constants/drivers';
 import { ROUTES } from '../../constants/routeStops';
+import * as Style from '../../constants/styleConstants';
 import type { FormData } from './BusTicketingForm';
 import { FormPicker } from './FormPicker';
 
@@ -77,42 +78,41 @@ export const TripDetailsStep: React.FC<TripDetailsStepProps> = ({
 const styles = StyleSheet.create({
   container: {
     backgroundColor: 'white',
-    borderRadius: 10,
-    padding: 20,
-    marginBottom: 20,
-    shadowColor: '#000',
+    borderRadius: Style.BORDER_RADIUS_MEDIUM,
+    padding: Style.BUTTON_PADDING_HORIZONTAL,
+    marginBottom: Style.BUTTON_PADDING_HORIZONTAL,
+    shadowColor: Style.COLOR_SHADOW,
     shadowOffset: {
       width: 0,
       height: 2,
     },
-    shadowOpacity: 0.1,
-    shadowRadius: 3.84,
+    shadowOpacity: Style.SHADOW_OPACITY,
+    shadowRadius: Style.SHADOW_RADIUS,
     elevation: 5,
   },
   title: {
-    fontSize: 24,
+    fontSize: Style.FONT_SIZE_LARGE,
     fontWeight: 'bold',
-    color: '#333',
-    marginBottom: 20,
+    color: Style.COLOR_TEXT,
+    marginBottom: Style.BUTTON_PADDING_HORIZONTAL,
     textAlign: 'center',
   },
   nextButton: {
-    backgroundColor: '#2b8aed',
-    paddingVertical: 15,
-    borderRadius: 8,
-    marginTop: 20,
+    backgroundColor: Style.COLOR_PRIMARY,
+    paddingVertical: Style.BUTTON_PADDING_VERTICAL,
+    borderRadius: Style.BORDER_RADIUS_SMALL,
+    marginTop: Style.BUTTON_PADDING_HORIZONTAL,
     alignItems: 'center',
   },
   disabledButton: {
-    backgroundColor: '#a0c4f7',
-    opacity: 0.6,
+    backgroundColor: Style.COLOR_DISABLED,
   },
   buttonText: {
     color: 'white',
-    fontSize: 16,
+    fontSize: Style.FONT_SIZE_MEDIUM,
     fontWeight: 'bold',
   },
   disabledButtonText: {
-    color: '#ccc',
+    color: Style.COLOR_DISABLED_TEXT,
   },
 });
